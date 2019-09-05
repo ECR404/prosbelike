@@ -12,5 +12,14 @@
  * from where it left off.
  */
 void autonomous() {
-    
+    pros::Motor left_mtr(2);
+    pros::Motor right_mtr(1);
+    left_mtr.move_relative(360, 100);
+    right_mtr.move_relative(-360, 100);
+    pros::delay(1000);
+    left_mtr.move_relative(500, 100);
+    pros::delay(1000);
+    left_mtr.move_relative(360, 100);
+    right_mtr.move_relative(-360, 100);
+    pros::delay(1000);
 }

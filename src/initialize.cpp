@@ -17,6 +17,7 @@ void on_center_button() {
  * to keep execution time for this mode under a few seconds.
  */
 void initialize() {
+	pros::Motor left_motor(2);
 	pros::lcd::initialize();
 	pros::lcd::set_text(1, "Hello PROS User!");
 

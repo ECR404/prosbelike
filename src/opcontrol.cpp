@@ -26,6 +26,15 @@ void opcontrol() {
 
 		left_mtr = left;
 		right_mtr = -right;
+
+		if(master.get_digital(DIGITAL_A))
+		{
+			autonomous();
+		}
+
+		pros::lcd::set_text(3, std::to_string(-right_mtr.get_position()));
+		pros::lcd::set_text(2, std::to_string(left_mtr.get_position()));
+
 		pros::delay(20);
 	}
 }
