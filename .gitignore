@@ -5,8 +5,8 @@
 *.slo
 *.lo
 *.o
-*.obj
-*.bin
+bin/*.obj
+bin/*.bin
 *.elf
 
 # Precompiled Headers
